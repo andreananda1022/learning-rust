@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Andi",
+    "age": 20,
+    "score": 85.5
+  },
+  {
+    "id": 2,
+    "name": "Budi",
+    "age": 22,
+    "score": 90.0
+  },
+  {
+    "id": 3,
+    "name": "Citra",
+    "age": 19,
+    "score": 72.0
+  },
+  {
+    "id": 4,
+    "name": "Cania",
+    "age": 21,
+    "score": 81.0
+  },
+  {
+    "id": 5,
+    "name": "Fery",
+    "age": 20,
+    "score": 78.0
+  },
+  {
+    "id": 6,
+    "name": "Andri",
+    "age": 22,
+    "score": 79.5
+  },
+  {
+    "id": 7,
+    "name": "Supriyanto",
+    "age": 21,
+    "score": 92.0
+  }
+]
