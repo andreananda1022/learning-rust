@@ -31,3 +31,9 @@ Proyek ini menggunakan pemisahan kode modular untuk mempermudah pemeliharaan jan
 
 ### 1. Berkas Input (`.csv`)
 Berkas input wajib berupa CSV ber-header dengan urutan dan nama kolom sebagai berikut:
+```csv
+nik,nama,jenis_mutasi,asal_daerah,tujuan_daerah
+1234567890123456,Budi Santoso,Pindah,PDG,KTA
+9876543210123456,Siti Aminah,Datang,KTA,PDG
+112233,Ahmad Subarjo,Pindah,PDG,KTA
+1234567890123457,Dewi Lestari,Datang,BYA,PDG
