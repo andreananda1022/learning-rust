@@ -1,0 +1,13 @@
+{
+  "total_processed": 6,
+  "total_failed": 3,
+  "destination_summary": {
+    "PDG": 1,
+    "KTA": 1
+  },
+  "errors_log": [
+    "NIK tidak valid: 112233",
+    "CSV deserialize error: record 4 (line: 5, byte: 173): unknown variant `MASUK`, expected `Pindah` or `Datang`",
+    "CSV error: record 5 (line: 6, byte: 217): found record with 4 fields, but the previous record has 5 fields"
+  ]
+}
