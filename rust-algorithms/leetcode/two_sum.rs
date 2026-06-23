@@ -1,23 +1,23 @@
+use std::collections::HashMap;
+
 fn main() {
-    let nums: [i8; 5] = [2, 2, 5, 3, 3];
+    let nums = vec![2, 2, 5, 4, 3];
     let target = 9;
 
     let result = two_sum(nums, target);
     println!("{:?}", result);
 }
 
-// Brute Force
-// Time Complexity: O(n^2)
-fn two_sum(nums: [i8; 5], target: i8) -> [usize; 2] {
-    for i in 0..nums.len() {
-        for j in i + 1..nums.len() {
-            // Cara sebelumnya seperti ini: if nums[i] + nums[j] == target
-            // Katanya lebih dekat dengan algoritma yang digunakan dalam HashMap
-            if nums[i] == target - nums[j] {
-                return [i, j]
-            }
+// Pendekatan Menggunakan HashMap
+// Time Complexity: O(n)
+fn two_sum(nums: Vec<i8>, target: i8) -> Vec<i8> {
+    let mut map = HashMap::new();
+    for (i, &num) in nums.iter().enumerate() {
+        let complement = target - num;
+        if let Some(&j) = map.get(&complement) {
+            return vec![j as i8, i as i8];
         }
+        map.insert(num, i);
     }
-
-    [0, 0]
+    vec![]
 }
